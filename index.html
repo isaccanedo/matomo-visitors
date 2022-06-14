@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>即刻学术 - 站点访客</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/gogobody/matomo_visitors@latest/style.min.css"/>
+    <script type="text/javascript">
+        var analyticsAPI = {
+            id: '1',
+            url: 'https://ijkxs.matomo.cloud/',
+            token: '226e5483810410996dfd46493ca02bb5'
+        };
+        var _paq = _paq || [];
+        _paq.push(["setDomains", ["*"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = analyticsAPI.url;
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', analyticsAPI.id]);
+        })();
+
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/matomo-org/matomo@4.3.1/js/piwik.min.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/countup.js/1.9.3/countUp.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0-rc.1/echarts.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/echarts@4.9.0/map/js/world.js"></script>
+
+</head>
+<body>
+<div id="established_at" content="2020-10-01T00:00+08:00" style="display: none"></div>
+<div class="ui inverted vertical masthead center aligned segment zoomed">
+    <div class="ui text container">
+        <h1 class="ui inverted header"><i class="chart bar icon"></i>访客分析</h1>
+        <div id="established-at" class="ui black labels"></div>
+        <div class="ui black label"><i class="history icon"></i><span id="total-actions">0</span>
+            <div class="detail">PV</div>
+        </div>
+    </div>
+</div>
+<div class="ui vertical stripe stats segment">
+    <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+            <div class="column">
+                <div class="ui green statistic">
+                    <div class="label">在线访客数</div>
+                    <div id="live-visitors-stat" class="value">0</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui statistic">
+                    <div class="label">今日访客数</div>
+                    <div id="today-visitors-stat" class="value">0</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui statistic">
+                    <div class="label">今日访问次数</div>
+                    <div id="today-visits-stat" class="value">0</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui statistic">
+                    <div class="label">今日浏览次数</div>
+                    <div id="today-actions-stat" class="value">0</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui statistic">
+                    <div class="label">昨日访客数</div>
+                    <div id="yesterday-visitors-stat" class="value">0</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui statistic">
+                    <div class="label">昨日访问次数</div>
+                    <div id="yesterday-visits-stat" class="value">0</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui statistic">
+                    <div class="label">昨日浏览次数</div>
+                    <div id="yesterday-actions-stat" class="value">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui vertical stripe segment">
+    <div class="ui container">
+        <div id="visit-summary" class="echart-container"></div>
+    </div>
+</div>
+<div class="ui vertical stripe segment">
+    <div class="ui container">
+        <div id="visit-hourly" class="echart-container"></div>
+    </div>
+</div>
+<div class="ui vertical stripe segment">
+    <div class="ui container">
+        <div id="visit-map" class="echart-container"></div>
+    </div>
+</div>
+<div class="ui vertical stripe segment">
+    <div class="ui container">
+        <div id="visit-calendar" class="echart-container"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gogobody/matomo_visitors@latest/analytic.min.js"></script>
+
+</body>
+</html>
